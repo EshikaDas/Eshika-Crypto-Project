@@ -6,7 +6,7 @@ import Dashboard from "./pages/Dashboard";
 import Home from "./pages/Home";
 import Watchlist from "./pages/Watchlist";
 import { ToastContainer} from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+
 
 
 function App() {

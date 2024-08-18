@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "localhost*"
+  to = "https://eshikacrypto.netlify.app/"
+  status = 200

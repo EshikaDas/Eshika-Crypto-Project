@@ -3,7 +3,7 @@ import Drawer from "@mui/material/Drawer";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import { IconButton } from "@mui/material";
 import Switch from "@mui/material/Switch";
-import { toast } from "react-toastify";
+
 
 export default function TemporaryDrawer() {
   const [open, setOpen] = useState(false);
@@ -27,7 +27,7 @@ export default function TemporaryDrawer() {
       setLight();
     }
     setDarkMode(!darkMode);
-    toast.success("Theme Changed!");
+   alert("Theme Changed!");
   };
 
   const setDark = () => {
