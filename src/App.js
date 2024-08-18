@@ -1,5 +1,5 @@
 import { createTheme, ThemeProvider } from "@mui/material";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Coin from "./pages/Coin";
 import Dashboard from "./pages/Dashboard";
@@ -26,14 +26,14 @@ function App() {
       <div className="cursor-pointer" id="cursor-pointer" />
       <ToastContainer />
       <ThemeProvider theme={theme}>
-        <BrowserRouter>
+        <HashRouter>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/coin/:id" element={<Coin />} />
             <Route path="/watchlist" element={<Watchlist />} />
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
       </ThemeProvider>
     </div>
   );
