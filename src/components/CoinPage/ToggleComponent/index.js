@@ -14,7 +14,7 @@ export default function ToggleComponents({ priceType, handlePriceTypeChange }) {
     >
       <ToggleButtonGroup
         value={priceType}
-        exclusive
+        exclusive//makes  only one button active at a time
         onChange={(e) => {
           handlePriceTypeChange(e);
         }}
